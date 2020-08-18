@@ -3949,6 +3949,10 @@ fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "http://nexus.gz.cvte.cn/nexus/repository/npm-group/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
+fast-memoize@^2.5.2:
+  version "2.5.2"
+  resolved "http://nexus.gz.cvte.cn/nexus/repository/npm-group/fast-memoize/-/fast-memoize-2.5.2.tgz#79e3bb6a4ec867ea40ba0e7146816f6cdce9b57e"
+
 faye-websocket@^0.10.0:
   version "0.10.0"
   resolved "http://nexus.gz.cvte.cn/nexus/repository/npm-group/faye-websocket/-/faye-websocket-0.10.0.tgz#4e492f8d04dfb6f89003507f6edbf2d501e7c6f4"
@@ -7710,6 +7714,10 @@ realpath-native@^1.1.0:
   resolved "http://nexus.gz.cvte.cn/nexus/repository/npm-group/realpath-native/-/realpath-native-1.1.0.tgz#2003294fea23fb0672f2476ebe22fcf498a2d65c"
   dependencies:
     util.promisify "^1.0.0"
+
+recoil@^0.0.10:
+  version "0.0.10"
+  resolved "http://nexus.gz.cvte.cn/nexus/repository/npm-group/recoil/-/recoil-0.0.10.tgz#679ab22306f559f8a63c46fd5ff5241539f9248f"
 
 recursive-readdir@2.2.2:
   version "2.2.2"
