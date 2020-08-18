@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { personFamily, selectedPersonIdState } from './pageStates';
+import { personFamily, selectedPersonIdState } from './stroes/pageStore';
 export const SelectedBox = memo(() => {
   const selectedId = useRecoilValue(selectedPersonIdState);
   const [person, setPerson] = useRecoilState(personFamily(selectedId));

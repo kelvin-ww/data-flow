@@ -13,5 +13,5 @@ export const mockPersonList = () =>
           name: 'oooooooo',
         },
       ]);
-    }, 1000);
+    }, 500);
   });

@@ -1,6 +1,6 @@
 import { useRecoilCallback, useSetRecoilState } from 'recoil';
 import { mockPersonList } from '../../common/mock';
-import { personListState, personFamily } from '../pageStates';
+import { personListState, personFamily } from '../stroes/pageStore';
 import { useEffect } from 'react';
 
 export default function useFetchPersonList() {
