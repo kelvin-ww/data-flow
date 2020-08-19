@@ -3,7 +3,14 @@ import PersonList from './PersonList';
 import SelectedBox from './SelectedBox';
 import { personStore } from './stores';
 
-const Page2 = ({}) => {
+/**
+ * mobx
+ * 1. 很好支持class 和 hook
+ * 2. 有最佳实践，衍生工具丰富
+ * 3. 性能好
+ */
+
+const Page2 = () => {
   useEffect(() => {
     personStore.fetchPersonList();
   }, []);

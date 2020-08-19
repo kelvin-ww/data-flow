@@ -34,3 +34,6 @@
   margin-bottom: 24px;
   line-height: 60px;
 }
+.active {
+  background-color: #ddd;
+}

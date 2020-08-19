@@ -8,8 +8,18 @@ function App() {
   return (
     <div className="App">
       <div className="left-box">
-        <div onClick={() => setPage('page1')}>page1</div>
-        <div onClick={() => setPage('page2')}>page2</div>
+        <div
+          className={page === 'page1' ? 'active' : ''}
+          onClick={() => setPage('page1')}
+        >
+          recoil
+        </div>
+        <div
+          className={page === 'page2' ? 'active' : ''}
+          onClick={() => setPage('page2')}
+        >
+          mobx
+        </div>
       </div>
       {page === 'page1' ? <Page1 /> : <Page2 />}
     </div>

@@ -5,6 +5,7 @@ import useFetchPersonList from './hooks/useFetchPersonList';
 import { personListState } from './stroes/pageStore';
 import { SelectedBox } from './SelectedBox';
 import { Person } from './Person';
+import { PersonList } from './PersonList';
 
 /**
  * 优点
@@ -14,19 +15,16 @@ import { Person } from './Person';
  * 缺点
  * 1. 需要耦合useRecoilXX ,不能复用通用hook的state， 受控hook？
  * 2. 对class组件支持不友好，需要包装props传递
+ * 3. 调试工作缺乏
+ * 4. 性能一般, 基于context，单原子多个setState重复render
  */
 
 const Page1 = () => {
-  const [personList] = useRecoilState(personListState);
   useFetchPersonList();
-
   return (
     <>
       <div className="center-box">
-        {personList.map((id) => (
-          <Person key={id} id={id} />
-        ))}
-        <div></div>
+        <PersonList />
       </div>
       <div className="right-box">
         <SelectedBox />
