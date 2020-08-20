@@ -1,12 +1,21 @@
 import { useRecoilCallback, useSetRecoilState } from 'recoil';
 import { mockPersonList } from '../../common/mock';
-import { personListState, personFamily } from '../stroes/pageStore';
+import {
+  personListState,
+  personFamily,
+  selectedPersonIdState,
+} from '../stroes/pageStore';
 import { useEffect } from 'react';
 
 export default function useFetchPersonList() {
   const setPersonList = useSetRecoilState(personListState);
 
-  const fetchPersonList = useRecoilCallback(({ set }) => () => {
+  const fetchPersonList = useRecoilCallback(({ set, snapshot }) => () => {
+    console.log(
+      'selectedPerson',
+      snapshot.getLoadable(selectedPersonIdState).contents
+    );
+
     mockPersonList().then((list) => {
       setPersonList(
         list.map((item) => {
